@@ -1,9 +1,10 @@
 const express = require("express")
 const router = express.Router()
 
-const { getInfo } = require("../controller/infoController")
+const { getInfo, operations } = require("../controller/infoController")
 
-router.route(`/`).get(getInfo)
+router.route(`/info`).get(getInfo)
+router.post(`/operations`, operations )
 
 
 module.exports = router

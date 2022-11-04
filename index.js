@@ -15,7 +15,7 @@ app.use(cors());
 // log routes visited
 app.use(morgan("common"))
 
-app.use(`/api/info`, infoRoute)
+app.use(`/api/`, infoRoute)
 
 
 
